@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@100;200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
+:root{
+    --Soft-orange:hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue:hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);  
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    list-style: none;
+
+}
+.dropdown{
+    display: none;
+}
+header{
+    margin: 2% 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav ul li {
+    float: left;
+    margin: 0 15px;        
+}
+header nav ul li a{
+    text-decoration: none;
+    color: var(--Dark-grayish-blue);
+    font-weight: 500;
+    font-size: 20px;
+}
+header nav ul li a:hover{
+    color: var(--Soft-orange);
+}
+.container{
+    margin: 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+.container .leftpart{
+    width: 77%;
+}
+.container .leftpart h1{
+    font-size: 60px;
+    font-weight: 900;
+    color: var(--Very-dark-blue);
+    margin-bottom: 20px;
+}
+.container .leftpart .total{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+}
+.container .leftpart img{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.container .leftpart p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 20px;
+}
+.container .leftpart .btn{
+    margin-top: 20px;
+    padding: 10px 30px;
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+}
+
+.container .rightpart{
+    margin-left: 20px;
+    background-color: var(--Very-dark-blue);
+    padding: 20px;
+    color: #fff;
+    width: 20%;
+    height:fit-content;
+}
+.container .rightpart .title{
+    font-size: 40px;
+    font-weight: 500;
+    color: var(--Soft-orange);
+    margin-bottom: 30px;
+}
+.container .rightpart .new__item{
+    margin-bottom: 30px;
+}
+.container .rightpart .new__item h{
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.container .rightpart .new__item p{
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--Grayish-blue);
+}
+.container .cards{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;/
+}
+.container .cards .card{
+    width: 30%;
+    background-color: var(--Off-white);
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .cards .card img{
+    width: 30%;
+}
+.container .cards .card .card__content{
+    width: 70%;
+    margin-left: 20px;
+}
+.container .cards .card .card__content h1{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: var(--Grayish-blue);
+
+}
+.container .cards .card .card__content h2:hover{
+    color: var(--Soft-orange);
+}
+.container .cards .card .card__content p{
+    font-size: 14px;
+    font-weight: 400;
+    color: black;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 768px){
+    header nav ul li{
+        display: none;
+    }
+.dropbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown button{
+    background:white;
+    border: none;
+
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+.container{
+    flex-direction: column;
+}
+.container .leftpart{
+    width: 100%;
+}
+.container .leftpart .total{
+    flex-direction: column;
+}
+.container .leftpart .total button{
+    text-align: center  ;
+}
+.container .leftpart h1{
+    font-size: 40px;
+}
+.container .leftpart img{
+    width: 100%;
+}
+.container .rightpart{
+    width: 80%;
+    margin-left: 0;
+    margin-top: 20px;
+}
+.container .rightpart .title{
+    font-size: 30px;
+}
+.container .cards{
+    flex-direction: column;
+}
+.container .cards .card{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+
+
+
+}
